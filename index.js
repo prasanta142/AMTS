@@ -35,6 +35,12 @@ app.get('/', (req, res) => {
     res.send('API is running...');
 });
 
+app.get('/api/health', (req, res) => {
+    res.send('health is ok ...');
+});
+
+
 app.listen(PORT, () => {
     console.log(`Server running on port ${PORT}`);
 });
+
